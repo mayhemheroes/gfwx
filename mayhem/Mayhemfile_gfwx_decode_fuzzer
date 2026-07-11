@@ -1,0 +1,8 @@
+project: gfwx
+target: gfwx_decode_fuzzer
+cmds:
+  - cmd: /mayhem/gfwx_decode_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gfwx_decode_fuzzer/testsuite
